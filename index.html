@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themester</title>
+
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class=" bg-col1 overflow-hidden">
+
+
+    <div class="relative w-full h-[100px] bg-col2 grid grid-cols-2 ">
+        <button id="EditBtn"
+            class="m-auto relative bg-[#346b4a] w-fit h-[5vh] px-[20px] rounded-lg  ml-[80%]  hover:bg-[#2a6bc0] ">
+            <p class="text-center  text-col4 text-3xl font-bold select-none">Edit</p>
+        </button>
+        <button id="ThisWeekBtn"
+            class="m-auto relative bg-[#346b4a] w-fit h-[5vh] px-[20px] rounded-lg mr-[80%]  hover:bg-[#2a6bc0] ">
+            <p class="text-center  text-col4 text-3xl font-bold select-none">This week</p>
+        </button>
+    </div>
+
+    <div id="ThisWeekPage" class=" hidden relative m-auto w-[70vw] h-[70vh] bg-col2 rounded-3xl mt-[11vh] ">
+
+        <div class="grid grid-cols-3 gap-0">
+            <div class=" mt-[72%] ml-[28%] w-[17vw] h-[10vw] bg-col3 rounded-lg">
+                <p id="playerOne" class="text-center mt-[15%] text-col4 text-5xl font-bold">Celvin</p>
+                <p id="playerOneWeeks" class="text-center mt-[2%] text-col4 text-xl font-bold">Weeks hosted: 0</p>
+            </div>
+
+            <div class=" mt-[80%] ml-[14%] w-[17vw] h-[5vw] bg-col3 rounded-lg ">
+                <p id="theme" class="text-center mt-[3%] text-col4 text-3xl font-bold">This weeks theme:</p>
+                <p id="theme" class="text-center  text-col4 text-3xl font-bold">Among Us</p>
+            </div>
+
+            <div class=" mt-[72%] ml-[0%] w-[17vw] h-[10vw] bg-col3 rounded-lg ">
+                <p id="playerTwo" class="text-center mt-[15%] text-col4 text-5xl font-bold">Emannen</p>
+                <p id="playerTwoWeeks" class="text-center mt-[2%] text-col4 text-xl font-bold">Weeks hosted: 420
+                </p>
+            </div>
+        </div>
+
+        <div class="m-auto mt-[-35%] relative bg-col3 w-fit h-[5vh] px-[20px] rounded-lg ">
+            <p id="weekCounter" class=" pt-[4%] text-col4 text-3xl font-bold">Week 3</p>
+        </div>
+
+        <div class="relative m-auto w-fit mt-[35%]">
+            <button id="randomBtn" class="bg-[#346b4a] w-fit h-[5vh] px-[20px] rounded-lg hover:bg-[#2a6bc0] ">
+                <p class="text-center  text-col4 text-3xl font-bold select-none ">Randomize</p>
+            </button>
+        </div>
+
+    </div>
+
+    <div id="EditPage" class=" relative m-auto w-[40vw] h-[60vh] bg-col2 rounded-3xl mt-[11vh] ">
+
+        <div class="grid grid-cols-2 gap-0">
+            <div class=" mt-[15%] ml-[10%] w-[17vw] h-[25vw] bg-col3 rounded-3xl ">
+
+                <div
+                    class=" w-[17vw] h-[2.7vw] bg-col3 border-b-4 border-col2 ">
+                    <p id="playerOne" class="text-center bg-col3 text-col4 text-3xl font-bold rounded-3xl ">People</p>
+                </div>
+
+                <ul id="personList">
+
+                    <li class=" relative ml-[5%] mt-[4%] bg-col1 w-[90%] h-[3vh]">
+                        <p class="  ml-[5%] text-xl font-bold text-col4">Celvin</p>
+                        <p class=" mt-[-9.5%] ml-[92.4%] text-xl font-bold text-col4">5</p>
+                    </li>
+                    
+                </ul>
+
+                
+            </div>
+            <div class=" absolute ml-[5%] mt-[50vh] w-[17vw] h-[2.7vw] bg-col3 border-t-4 border-col2">
+
+                <div id="peopleAdd" class=" inline-block ml-[9%] mt-[0.8%] w-[15%] h-[90%] bg-col1 z-10 hover:cursor-pointer hover:bg-col2">
+                    <div class=" mt-[12.5%] ml-[45%] w-[10%] h-[70%] bg-col4"></div>
+                    <div class=" mt-[-35%] ml-[15%] w-[70%] h-[10%] bg-col4"></div>
+                </div>
+                
+                <div id="peopleRemove" class=" inline-block ml-[5%] mt-[0.8%] w-[15%] h-[90%] bg-col1 z-10 hover:cursor-pointer hover:bg-col2">
+                    <div class=" mt-[40%] ml-[15%] w-[70%] h-[10%] bg-col4"></div>
+                </div>
+
+                <div id="peopleClear" class=" inline-block ml-[5%] mt-[0.8%] w-[15%] h-[90%] bg-col1 z-10 hover:cursor-pointer hover:bg-col2">
+                    <div class=" mt-[40%] ml-[15%] w-[70%] h-[10%] rotate-[-45deg] bg-col4"></div>
+                    <div class=" mt-[-10%] ml-[15%] w-[70%] h-[10%] rotate-[45deg] bg-col4"></div>
+                </div>
+
+            </div>
+
+            
+
+            <div class=" mt-[15%] ml-[5%] w-[17vw] h-[25vw] bg-col3 rounded-3xl ">
+
+                <div
+                    class=" w-[17vw] h-[2.7vw] bg-col3 border-b-4 border-col2 ">
+                    <p id="playerOne" class="text-center bg-col3 text-col4 text-3xl font-bold rounded-full">Themes</p>
+                </div>
+
+                <ul id="themeList">
+                    
+                    <li class=" relative ml-[5%] mt-[4%] bg-col1 w-[90%] h-[3vh]">
+                        <p class="  ml-[5%] text-xl font-bold text-col4">Celvin</p>
+                        <p class=" mt-[-9.5%] ml-[92.4%] text-xl font-bold text-col4">5</p>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class=" absolute ml-[52.5%] mt-[50vh] w-[17vw] h-[2.7vw] bg-col3 border-t-4 border-col2">
+
+                <div id="themeAdd" class=" inline-block ml-[9%] mt-[0.8%] w-[15%] h-[90%] bg-col1 z-10 hover:cursor-pointer hover:bg-col2">
+                    <div class=" mt-[12.5%] ml-[45%] w-[10%] h-[70%] bg-col4"></div>
+                    <div class=" mt-[-35%] ml-[15%] w-[70%] h-[10%] bg-col4"></div>
+                </div>
+                
+                <div id="themeRemove" class=" inline-block ml-[5%] mt-[0.8%] w-[15%] h-[90%] bg-col1 z-10 hover:cursor-pointer hover:bg-col2">
+                    <div class=" mt-[40%] ml-[15%] w-[70%] h-[10%] bg-col4"></div>
+                </div>
+
+                <div id="themeClear" class=" inline-block ml-[5%] mt-[0.8%] w-[15%] h-[90%] bg-col1 z-10 hover:cursor-pointer hover:bg-col2">
+                    <div class=" mt-[40%] ml-[15%] w-[70%] h-[10%] rotate-[-45deg] bg-col4"></div>
+                    <div class=" mt-[-10%] ml-[15%] w-[70%] h-[10%] rotate-[45deg] bg-col4"></div>
+                </div>
+
+            </div>
+
+            <input id="personInput" type="text" class="w-[17vw] ml-[10%] mt-[5%]">
+            <input id="themeInput" type="text" class="w-[17vw] ml-[5%] mt-[5%]">
+        </div>
+    </div>
+
+
+
+    <script src="js.js"></script>
+</body>
+
+</html>
